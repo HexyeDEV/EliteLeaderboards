@@ -1,0 +1,23 @@
+name: EliteLeaderboards
+version: '1.0'
+main: me.hexye.eliteLeaderboards.EliteLeaderboards
+api-version: '1.21'
+authors: [ Hexye ]
+depend: [PlaceholderAPI]
+commands:
+  leaderboardadd:
+    description: Add a leaderboard
+    usage: /leaderboardadd <name> <placeholder to track> [transform into time?(y/n)]
+    permission: eliteleaderboards.admin
+    permission-message: "&cYou do not have permission to use this command."
+    aliases: [lbadd, elbadd]
+  leaderboardremove:
+    description: Remove a leaderboard
+    usage: /leaderboardremove <name>
+    permission: eliteleaderboards.admin
+    permission-message: "&cYou do not have permission to use this command."
+    aliases: [lbremove, elbremove]
+permissions:
+    eliteleaderboards.admin:
+        description: Allows the player to add and remove leaderboards
+        default: op
